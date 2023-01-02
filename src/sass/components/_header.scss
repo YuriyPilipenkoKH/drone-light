@@ -6,7 +6,69 @@
 // }
 
 .header {
-    background-color: #000;
+    background-color:var(--blackColor);
+}
+
+
+
+
+.header__logo-link {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+
+    transition: all 0.3s var(--transitionTimingFunction);
+
+    &:hover,
+    &:focus {
+        outline: none;
+
+        .header__logo{
+            fill: var(--btn-hoverColor);
+            scale: 1.2;
+        }
+        
+    }
+}
+
+.header__logo {
+    fill: var(--whiteColor);
+    transition: all 0.3s var(--transitionTimingFunction);
+}
+
+.header__menu-btn {
+
+    font-size: 25px;
+    color: var(--whiteColor);
+
+    transition: all 0.3s var(--transitionTimingFunction);
+  
+
+    @media screen and(min-width: 1200px) {
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: var(--btn-hoverColor);
+        scale: 1.2;
+        
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    background-color:var(--blackColor);
+
+
+    @media screen and(min-width: 1200px) {
+       gap: 50px;
+       
+    }
 }
 
 
@@ -15,36 +77,44 @@
 
     @media screen and(min-width: 1200px) {
         display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 100px;
     }
 }
 
-.header__logo-link {
-    padding: 0;
-    margin: 0;
-    height: 20px;
+.header__nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: var(--whiteColor);  
+
+    transition: all 0.3s var(--transitionTimingFunction);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: var(--btn-hoverColor);
+    }
+
 }
 
-.header__logo {
-    fill: var(--whiteColor);
-}
+.header__search-btn {
+    font-size: 30px;
+    line-height: 30px;
 
-.header__menu-btn {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    font-size: 25px;
-    color: var(--whiteColor);
-    cursor: pointer;
+    transition: all 0.3s var(--transitionTimingFunction);
 
-    @media screen and(min-width: 1200px) {
+    @media screen and(max-width: 1199px) {
         display: none;
     }
-}
 
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
+    &:hover,
+    &:focus {
+        outline: none;
+        color: var(--btn-hoverColor);
+        scale: 1.2;
+        
+    }
 }
