@@ -35,7 +35,7 @@ align-content: center;
             fill: var(--btn-hoverColor);
             scale: 1.2;
         }
-        &~.footer__title {
+        .footer__title {
             color: var(--btn-hoverColor);
         }
         
