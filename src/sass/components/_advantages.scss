@@ -1,0 +1,31 @@
+.advantages {
+    background-color: #F7F8FA;
+    padding: 28px 0 40px;
+}
+
+.advantages__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    
+    color: #222222;    
+    margin-bottom: 22px;
+
+    @media screen and(min-width: 1200px) {
+        font-size: 48px;
+        line-height: 72px;   
+        margin-bottom: 16px;
+    }
+}
+
+.advantages__paragraph {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 44px;    
+    text-align: center;
+    
+    color: #222222;   
+    margin-bottom: 30px;
+    
+}
