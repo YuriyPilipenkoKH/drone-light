@@ -7,7 +7,8 @@
 
 .header {
     width: 100vw;
-    background-color:var(--blackColor);
+    background-color: #000000;
+
 
     @media screen and(min-width: 1200px) {
         position: absolute;
@@ -18,7 +19,10 @@
 
 }
 
+.header.main {
+    background-color: #00000000;
 
+}
 
 
 .header__logo-link {
@@ -71,7 +75,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 15px;
-    background-color:var(--blackColor);
+    // background-color: #00000080;
+
 
 
     @media screen and(min-width: 1200px) {

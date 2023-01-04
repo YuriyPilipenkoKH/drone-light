@@ -1,5 +1,6 @@
 .hero {
     background-color:var(--blackColor);
+   
 }
 
 .hero__wrapper {
@@ -8,6 +9,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 50px 32px 208px;
+    z-index: 3;
 
     background-size: cover;
     background-position: center;
